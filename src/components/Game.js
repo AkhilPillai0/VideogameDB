@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { loadDetail } from "../actions/detailAction";
 import { Link } from "react-router-dom";
-import { smallImage } from "../util";
 import { popup } from "../animations";
 
 const Game = ({ name, released, image, id }) => {
@@ -30,7 +29,7 @@ const Game = ({ name, released, image, id }) => {
         <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
         <p>{released}</p>
         <motion.img
-          layoutId={`image ${stringPathId}`}
+          layoutId={`image ${stringPathId}`}white
           src={image}
           alt={name}
         />
