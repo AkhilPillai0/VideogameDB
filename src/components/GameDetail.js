@@ -98,11 +98,15 @@ const GameDetail = ({ pathId }) => {
             </Description>
             <div className="gallery">
               {screen.results.map((screen) => (
-                <img
-                  src={smallImage(screen.image, 1280)}
-                  key={screen.id}
-                  alt={screen.image}
-                />
+                <div>
+                   <img
+                    src={smallImage(screen.image, 1280)}
+                    key={screen.id}
+                    alt={screen.image}
+                  />
+
+                <br />
+              </div>
               ))}
             </div>
           </Detail>
