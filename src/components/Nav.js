@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import logo from "../img/logo.svg";
+import logo from "../img/logo512.png";
 //Redux and Routes
 import { fetchSearch } from "../actions/gamesAction";
 import { useDispatch } from "react-redux";
@@ -64,15 +64,16 @@ const StyledNav = styled(motion.nav)`
 `;
 
 const Logo = styled(motion.div)`
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  color: white;
-  cursor: pointer;
-  img {
-    height: 2rem;
-    width: 2rem;
-  }
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+cursor: pointer;
+img {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem
+}
 `;
 
 export default Nav;
