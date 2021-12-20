@@ -58,7 +58,7 @@ const StyledNav = styled(motion.nav)`
     padding: 0.5rem 2rem;
     cursor: pointer;
     border-radius: 10px;
-    background: #1e873a;
+    background: #E84D18;
     color: white;
   }
 `;
